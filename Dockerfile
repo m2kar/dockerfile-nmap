@@ -1,6 +1,6 @@
-FROM progrium/busybox
+FROM alpine
 
-RUN opkg-install nmap
+RUN apk install nmap
 RUN mkdir /data
 VOLUME /data
 WORKDIR /data
